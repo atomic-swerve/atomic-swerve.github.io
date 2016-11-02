@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "5.6.0"
+install:
+  - npm install
+script:
+  - make check
+  - make generate
+after_success:
+  - bash deploy.sh
